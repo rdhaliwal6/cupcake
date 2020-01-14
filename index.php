@@ -14,7 +14,7 @@
     <div class="form-group">
         <label for="name">Your Name:</label><br>
     <input type="text" class="form-control" id="name" >
-    <span class="err" id="name">
+    <span class="errName" id="err-name">
                 Please enter a Name
     </span>
     </div>
