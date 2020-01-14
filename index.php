@@ -7,6 +7,8 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="script" href="script.js">
     <title>Cupcake Fundraiser</title>
 </head>
 <body>
@@ -14,7 +16,7 @@
     <div class="form-group">
         <label for="name">Your Name:</label><br>
     <input type="text" class="form-control" id="name" >
-    <span class="errName" id="err-name">
+    <span class="err" id="err-name">
                 Please enter a Name
     </span>
     </div>
