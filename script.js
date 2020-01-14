@@ -1,3 +1,8 @@
+// <!--
+// Rajpreet Dhaliwal
+// Assignment: Cupcake
+// Url: https://github.com/rdhaliwal6/cupcake
+// -->
 document.getElementById("cupcake-form").onsubmit
     = validate;
 
