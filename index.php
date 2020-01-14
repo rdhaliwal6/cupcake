@@ -34,18 +34,19 @@ $flavors = array("grasshopper"=>"The Grasshopper", "maple"=>"Whiskey Maple Bacon
                 </span>
             </div>
 
-        <fieldset class="form-group">
+
             <label>Cupcake flavors:</label><br>
+            <div class="form-group">
                 <?php
-                foreach($flavors as $value){
-                    echo "<input class=\"form-check-input\" type = 'checkbox' name='flavors[] value = '$value'>";
+                foreach($flavors as $key => $value){
+                    echo "<input class=\"form-check-input\" id='$value' type = 'checkbox' name='flavors[]' value = '$value'>";
                     echo "<label class=\"form-check-label\" for='$value'> $value </label><br>";
                 }
                 ?>
                 <span class="err" id="err-flavors">
                 Please enter a Name
                  </span>
-        </fieldset>
+        </div>
 
         <button id="submit" type="submit" class="btn btn-primary">
             Order
