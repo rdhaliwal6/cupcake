@@ -43,7 +43,7 @@ if(isset($_POST['name']) and !is_numeric($_POST['name'])){
 
 if($isValid){
     echo "<p>Thank you, $name for your order!<br>
-    Order Summary:</p><br><ul>";
+    Order Summary:</p><ul>";
     foreach ($order as $item){
         echo "<li>$item</li>";
     }
