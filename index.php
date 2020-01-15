@@ -1,13 +1,13 @@
 <?php
-//<!--
-//Rajpreet Dhaliwal
-//Assignment: Cupcake
-//Url: https://github.com/rdhaliwal6/cupcake
-//-->
 $flavors = array("grasshopper"=>"The Grasshopper", "maple"=>"Whiskey Maple Bacon",
     "carrot"=>"Carrot Walnut", "velvet"=>"Red Velvet", "lemon"=>"Lemon Drop",
     "tiramisu"=>"Tiramisu");
 ?>
+<!--
+//Rajpreet Dhaliwal
+//Assignment: Cupcake
+//Url: https://github.com/rdhaliwal6/cupcake
+//-->
 <!doctype html>
 <html lang="en">
 <head>
