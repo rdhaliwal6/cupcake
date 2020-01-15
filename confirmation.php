@@ -9,19 +9,20 @@ $flavorsCheck = array("The Grasshopper", "Whiskey Maple Bacon",
    "Carrot Walnut", "Red Velvet", "Lemon Drop",
     "Tiramisu");
 
-var_dump($_POST);
+//var_dump($_POST);
 
+    echo "<a href = index.php>Back to order page</a>";
 $isValid = true;
 
 if(isset($_POST['name']) and !is_numeric($_POST['name'])){
     $name = $_POST['name'];
-    $order = $_POST['flavor'];
+    $order = $_POST['flavors'];
 
     if($name === ""){
         echo "<p>Go back and insert a name for the order.</p>";
         $isValid = false;
     }
-    if(!isset($_POST['flavor'])){
+    if(!isset($_POST['flavors'])){
         echo "<p>Go back and pick a flavor</p>";
         $isValid = false;
     }
@@ -32,4 +33,15 @@ if(isset($_POST['name']) and !is_numeric($_POST['name'])){
             $isValid = false;
         }
     }
+}
+//print_r($order);
+
+if($isValid){
+    echo "<p>Thank you, $name for your order!<br>
+    Order Summary:</p><br><ul>";
+    foreach ($order as $item){
+        echo "<li>$item</li>";
+    }
+    echo "</ul>";
+    printf("Order Total: $%1\$.2f", count($order) * 3.50);
 }

@@ -39,7 +39,7 @@ $flavors = array("grasshopper"=>"The Grasshopper", "maple"=>"Whiskey Maple Bacon
             <div class="form-group">
                 <?php
                 foreach($flavors as $key => $value){
-                    echo "<input class=\"form-check-input\" id='$value' type = 'checkbox' name='flavors[]' value = '$value'>";
+                    echo "<input class=\"form-check-input\" id='$key' type = 'checkbox' name='flavors[]' value = '$value'>";
                     echo "<label class=\"form-check-label\" for='$value'> $value </label><br>";
                 }
                 ?>
